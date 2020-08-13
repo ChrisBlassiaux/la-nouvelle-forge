@@ -43,6 +43,18 @@
   transition: .4s;
 }
 
+.composants-img-2 {
+  background-image: url(/images/fablab/fablab.jpg);
+}
+
+.composants-img-3 {
+  background-image: url(/images/residents.jpg);
+}
+
+.composants-img-4 {
+  background-image: url(/images/services.jpg);
+}
+
 .composants:hover .composants-img {
   top: 10px;
   left: 10px;
