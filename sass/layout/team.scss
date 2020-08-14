@@ -8,6 +8,23 @@
 .team-img {
   width: 100%;
   height: 250px;
+  background: center / cover no-repeat url(/images/team/team-portrait-1.jpg);
+}
+
+.team-img-2 {
+  background-image: url(/images/team/team-portrait-2.jpg);
+}
+
+.team-img-3 {
+  background-image: url(/images/team/team-portrait-3.jpg);
+}
+
+.team-img-4 {
+  background-image: url(/images/team/team-portrait-4.jpg);
+}
+
+.team-img-5 {
+  background-image: url(/images/team/team-portrait-5.jpg);
 }
 
 .team-name {
