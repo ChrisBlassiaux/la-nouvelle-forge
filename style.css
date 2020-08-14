@@ -629,6 +629,31 @@ body {
   margin-left: 8px;
 }
 
+.dropdown {
+  position: relative;
+}
+
+.dropdown-open {
+  display: none;
+  position: absolute;
+  width: 150px;
+  padding: 10px;
+  top: 40px;
+  left: 0;
+  background-color: #FFF;
+  border: 1px solid #1A1A1A;
+  border-radius: 6px;
+}
+
+.dropdown-open-item {
+  color: #1A1A1A;
+  line-height: 1.8rem;
+}
+
+.dropdown-open-item:hover {
+  color: #E72287;
+}
+
 @media only screen and (max-width: 1260px) {
   .header svg {
     margin-top: -50px;
@@ -644,7 +669,21 @@ body {
   }
 
   .nav {
+    padding: 20px;
     display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    min-height: 310px;
+    color: #1A1A1A;
+    line-height: 2rem;
+    background-color: #FFF;
+    border: 1px solid #1A1A1A;
+  }
+
+  .nav-item {
+    display: block;
   }
 
   .burger {
@@ -691,6 +730,11 @@ body {
 @media only screen and (max-width: 420px) {
   .header svg {
     margin-top: 30px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .nav {
+    display: block !important;
   }
 }
 input,

@@ -19,19 +19,27 @@
         <a href="/landing-page.html">
           <img src="images/graphic-nf/logos_nf_ blanc_sansfond.png" alt="logotype" class="navbar-logo">
         </a>
-        <div class="burger">
+       <div class="burger" id="burger">
           <span class="middle-bar"></span>
         </div>
-        <nav class="nav">
+        <nav class="nav" id="nav">
           <a href="/services.html" class="nav-item">Nos services</a>
           <a href="/pepiniere.html" class="nav-item">La pépinière</a>
           <a href="/fablab.html" class="nav-item">Fablab</a>
           <a href="/residents.html" class="nav-item">Nos résidents</a>
-          <span class="nav-item">À propos<i class="fa fa-caret-down icon-dropdown"></i></span>
+          <span class="nav-item dropdown" id="dropdown">
+            À propos
+            <i class="fa fa-caret-down icon-dropdown"></i>
+            <span class="dropdown-open" id="dropdown-open">
+              <a href="/contact.html" class="dropdown-open-item">Nous contacter</a> <br>
+              <a href="/team.html" class="dropdown-open-item">Notre équipe</a>
+            </span>
+          </span>
         </nav>
       </div>
       <div class="container">
         <h1 class="header-title">Nous contacter</h1>
+        <p class="header-text">Pour toute question n'ayant pas trouvée réponse sur le site.</p>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#472F88" fill-opacity="1" d="M0,256L60,266.7C120,277,240,299,360,288C480,277,600,235,720,218.7C840,203,960,213,1080,229.3C1200,245,1320,267,1380,277.3L1440,288L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
     </header>
@@ -102,7 +110,10 @@
           <a href="#">Conditions générales</a>
         </div>
       </div>
-    </footer>
+     </footer>
     <!-- footer -->
+
+    <!-- JS -->
+    <script src="/js/navbar.js"></script>
   </body>
 </html> 
