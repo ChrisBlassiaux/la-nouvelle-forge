@@ -336,11 +336,11 @@ body {
 .company-logo {
   width: 100%;
   height: 250px;
-  background: center/contain no-repeat url(/images/entreprises/logo-hd-webmarketing-1.png);
+  background: center/contain no-repeat url(/images/entreprises/hd-webmarketing.jpg);
 }
 
 .company-logo-1 {
-  background-image: url(/images/entreprises/btp-consultants.jpg);
+  background-image: url(/images/entreprises/btp-consultant.jpg);
 }
 
 .company-logo-2 {
@@ -348,11 +348,11 @@ body {
 }
 
 .company-logo-3 {
-  background-image: url(/images/entreprises/creoignem.jpg);
+  background-image: url(/images/entreprises/creo.jpg);
 }
 
 .company-logo-4 {
-  background-image: url(/images/entreprises/btp-consultants.jpg);
+  background-image: url(/images/entreprises/union.jpg);
 }
 
 .company-logo-5 {
