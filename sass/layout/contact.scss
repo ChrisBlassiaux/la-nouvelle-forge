@@ -8,10 +8,6 @@ textarea {
   border: 2px solid $text-dark;
 }
 
-.submit {
-  float: right;
-}
-
 .icons-contact {
   margin-top: 100px;
 }
@@ -30,6 +26,13 @@ textarea {
   width: 100%;
 }
 
+@media only screen and (min-width: 450px) {
+  .submit {
+    float: right;
+  }
+}
+
+
 @media only screen and (min-width: 570px) {
   .icons-contact {
     margin-top: 150px;
@@ -47,3 +50,4 @@ textarea {
     margin-right: 20px;
   }
 }
+
