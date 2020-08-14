@@ -45,6 +45,8 @@
 
 .nav-item {
   margin: 0 15px;
+  transition: .3s;
+  cursor: pointer;
 }
 
 .nav-item:hover {
@@ -53,6 +55,10 @@
 
 .burger {
   display: none;
+}
+
+.icon-dropdown {
+  margin-left: 8px;
 }
 
 @media only screen and (max-width: 1260px) {
