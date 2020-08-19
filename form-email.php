@@ -90,7 +90,7 @@
           <p class="icon-contact-number">03.62.26.05.60</p>
         </div>
         <div class="block-contact">
-          <i class="fa fa-map-marker fa-2x icon-contact"></i>
+          <i class="fa fa-address-book fa-2x icon-contact"></i>
           <p class="icon-contact-planning">9h30 - 17H30</p>
         </div>
         <div class="block-contact">
