@@ -33,7 +33,7 @@
             À propos
             <i class="fa fa-caret-down icon-dropdown"></i>
             <span class="dropdown-open" id="dropdown-open">
-              <a href="/contact.php" class="dropdown-open-item">Nous contacter</a> <br>
+              <a href="form-email.php" class="dropdown-open-item">Nous contacter</a> <br>
               <a href="/team.html" class="dropdown-open-item">Notre équipe</a>
             </span>
           </span>
@@ -61,7 +61,7 @@
         </div>
       <?php endif; ?>
 
-      <form action="post_contact.php" method="POST" class="form-example">
+      <form action="php/post_contact.php" method="POST" class="form-example">
         <div class="form">
           <input type="text" name="name" id="name" placeholder="Nom Prénom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
         </div>
@@ -77,8 +77,8 @@
       </form>
 
       <!-- Debug !  -->
-      <h2>Debug :</h2>
-      <?= var_dump($_SESSION); ?>
+      <!-- <h2>Debug :</h2> -->
+      <!--  var_dump($_SESSION);  -->
 
       <div class="icons-contact">
         <div class="block-contact">
@@ -109,7 +109,7 @@
         <div class="footer-about">
           <h3 class="footer_title">À propos</h3>
           <a href="/team.html">Notre équipe</a><br>
-          <a href="/contact.php">Nous contacter</a>
+          <a href="form-email.php">Nous contacter</a>
         </div>
         <div class="footer-social">
           <h3 class="footer_title">Nous suivre</h3>

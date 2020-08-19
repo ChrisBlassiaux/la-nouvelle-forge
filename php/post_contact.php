@@ -19,7 +19,7 @@ if(!empty($errors)){
   $_SESSION['errors'] = $errors; //on envoie dans la session le tableau des erreurs
   $_SESSION['inputs'] = $_POST;
   // je redirige
-  header('Location: contact.php');
+  header('Location: form-email.php');
 }else{
   $_SESSION['success'] = 1;
 
@@ -29,7 +29,7 @@ if(!empty($errors)){
   mail('chrisblassiaux@yopmail.com', 'formulaire de contact', $message, $headers);
 
   // je redirige
-  header('Location: contact.php');
+  header('Location: form-email.php');
 }
 
 // Voir les erreurs sur le navigateur
