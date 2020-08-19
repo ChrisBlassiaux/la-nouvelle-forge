@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+  session_start();
+?><!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
@@ -46,20 +48,37 @@
     <!-- small-jumbotron - header -->
     <!-- contact -->
     <div class="container-small">
-      <form action="" method="get" class="form-example">
+
+    <!-- ALERT php -->
+      <?php if(array_key_exists('errors', $_SESSION)): ?>
+        <div class="alert alert-danger">
+          <?= implode('<br>', $_SESSION['errors']); ?>
+        </div>
+      <?php endif; ?>
+      <?php if(array_key_exists('success', $_SESSION)): ?>
+        <div class="alert alert-success">
+          Votre email a bien été envoyé
+        </div>
+      <?php endif; ?>
+
+      <form action="post_contact.php" method="POST" class="form-example">
         <div class="form">
-          <input type="text" name="name" id="name" placeholder="Nom Prénom" required>
+          <input type="text" name="name" id="name" placeholder="Nom Prénom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
         </div>
         <div class="form">
-          <input type="email" name="email" id="email" placeholder="Email" required>
+          <input type="email" name="email" id="email" placeholder="Email" value="<?= isset($_SESSION['inputs']['email']) ? $_SESSION['inputs']['email'] : ''; ?>">
         </div>
         <div class="form">
-          <textarea type="message" name="message" id="message" placeholder="Votre message ici..." rows="5" required></textarea>
+          <textarea type="message" name="message" id="message" placeholder="Votre message ici..." rows="5"><?= isset($_SESSION['inputs']['message']) ? $_SESSION['inputs']['message'] : ''; ?></textarea>
         </div>
         <div class="form">
           <input type="submit" value="Envoyer" class="btn btn-primary submit">
         </div>
       </form>
+
+      <!-- Debug !  -->
+      <h2>Debug :</h2>
+      <?= var_dump($_SESSION); ?>
 
       <div class="icons-contact">
         <div class="block-contact">
@@ -112,6 +131,13 @@
       </div>
      </footer>
     <!-- footer -->
+
+    <!-- PHP : Nettoyer la session -->
+    <?php
+      unset($_SESSION['inputs']);
+      unset($_SESSION['success']);
+      unset($_SESSION['errors']);
+    ?>
 
     <!-- JS -->
     <script src="/js/navbar.js"></script>
