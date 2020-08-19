@@ -24,9 +24,9 @@ if(!empty($errors)){
   $_SESSION['success'] = 1;
 
   $message = $_POST['message'];
-  $headers = 'FROM: site@local.fr';
+  $headers = "FROM : " . $_POST['email'];
   
-  mail('chrisblassiaux@yopmail.com', 'formulaire de contact', $message, $headers);
+  mail('contact-nf@yopmail.com', 'formulaire de contact', $message, $headers);
 
   // je redirige
   header('Location: form-email.php');

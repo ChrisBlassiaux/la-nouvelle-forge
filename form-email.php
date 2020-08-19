@@ -18,7 +18,7 @@
     <!-- small-jumbotron - header -->
     <header class="header">
       <div class="navbar">
-        <a href="/landing-page.html">
+        <a href="/index.html">
           <img src="images/graphic-nf/logos_nf_ blanc_sansfond.png" alt="logotype" class="navbar-logo">
         </a>
        <div class="burger" id="burger">
@@ -61,7 +61,7 @@
         </div>
       <?php endif; ?>
 
-      <form action="php/post_contact.php" method="POST" class="form-example">
+      <form action="post_contact.php" method="POST" class="form-example">
         <div class="form">
           <input type="text" name="name" id="name" placeholder="Nom Prénom" value="<?= isset($_SESSION['inputs']['name']) ? $_SESSION['inputs']['name'] : ''; ?>">
         </div>
