@@ -13,7 +13,7 @@
 → Ce projet a été créé le 9/08/2020 en tant que premier projet pour la formation Développeur Web chez PopSchool.
 
 ## :eyes:  Aperçu ?
-Lien Hébergement github
+https://chrisblassiaux.github.io/la-nouvelle-forge/
 
 ## :top:  Progression ?
 
