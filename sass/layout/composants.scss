@@ -38,21 +38,21 @@
   width: 100%;
 
   border-radius: 6px;
-  background: top / cover no-repeat url(/images/pepiniere.jpg);
+  background: top / cover no-repeat url(images/pepiniere.jpg);
   opacity: .4;
   transition: .4s;
 }
 
 .composants-img-2 {
-  background-image: url(/images/fablab/fablab.jpg);
+  background-image: url(images/fablab/fablab.jpg);
 }
 
 .composants-img-3 {
-  background-image: url(/images/residents.jpg);
+  background-image: url(images/residents.jpg);
 }
 
 .composants-img-4 {
-  background-image: url(/images/services.jpg);
+  background-image: url(images/services.jpg);
 }
 
 .composants:hover .composants-img {
